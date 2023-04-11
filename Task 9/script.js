@@ -26,5 +26,5 @@ class Movie {
 
 const movieExample = new Movie('pavadinimas', 'rezisierius', 200);
 const isMovieExpensiveExample = movieExample.wasExpensive();
-console.log(movieExample, isMovieExpensiveExample)
+console.log(movieExample, isMovieExpensiveExample);
 

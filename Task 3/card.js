@@ -7,7 +7,7 @@ export default class UserCards {
     render() {
         this.boxDiv = document.createElement('div');
         this.boxDiv.classList.add('box')
-        
+
 
         this.boxIdPlace = document.createElement('h1');
         this.boxIdPlaceText = document.createTextNode(this.login);

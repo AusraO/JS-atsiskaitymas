@@ -10,8 +10,8 @@ let clickCounter = 0
 
 
 button.addEventListener('click', () => {
-    clickCounter++;
+  clickCounter++;
   countingSpace.textContent = clickCounter;
- 
+
 });
 

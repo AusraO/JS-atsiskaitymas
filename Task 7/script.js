@@ -12,8 +12,8 @@ const audi = {
 };
 
 
-function showObjectKeys(obj){
-  let keys=Object.keys(obj);
-return keys;
+function showObjectKeys(obj) {
+  let keys = Object.keys(obj);
+  return keys;
 };
 console.log(showObjectKeys(audi));

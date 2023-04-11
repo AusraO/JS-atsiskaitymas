@@ -11,20 +11,20 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 
 function svorioSkaiciavimas(event) {
 
-    event.preventDefault();
-    let svorisKg = event.target.elements.search.value;
+  event.preventDefault();
+  let svorisKg = event.target.elements.search.value;
 
-    let svorisSvarais = svorisKg * 2.2046
-    let svorisGramais = svorisKg / 0.0010000
-    let svorisUncijomis = svorisKg * 35.274
+  let svorisSvarais = svorisKg * 2.2046
+  let svorisGramais = svorisKg / 0.0010000
+  let svorisUncijomis = svorisKg * 35.274
 
-     document.querySelector('#output').innerHTML =
-   "Weight in lb = " + svorisSvarais +
-        "<span> Weight in g = " + svorisGramais + '</span>'+
-        "<span>Weight in oz = " + svorisUncijomis+'</span>'
+  document.querySelector('#output').innerHTML =
+    "Weight in lb = " + svorisSvarais +
+    "<span> Weight in g = " + svorisGramais + '</span>' +
+    "<span>Weight in oz = " + svorisUncijomis + '</span>'
 }
 
 document
-    .querySelector('form')
-    .addEventListener('submit', svorioSkaiciavimas)
+  .querySelector('form')
+  .addEventListener('submit', svorioSkaiciavimas)
 

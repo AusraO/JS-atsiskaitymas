@@ -2,7 +2,7 @@ import Composition from "./modules/math/composition.js";
 import Substraction from "./modules/math/subtraction.js";
 import Multiplication from "./modules/math/multiplication.js";
 import Division from "./modules/math/division.js";
-import { one, two, three, four, five} from "./modules/numbers/numbers.js";
+import { one, two, three, four, five } from "./modules/numbers/numbers.js";
 
 
 /* ------------------------------ TASK 10 ---------------------------------------------------
@@ -14,7 +14,7 @@ let b = new Division(four, two);
 let c = new Substraction(three, two);
 let d = new Multiplication(five, two);
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+console.log(a.composition);
+console.log(b.division);
+console.log(c.substraction);
+console.log(d.multiplication);

@@ -11,16 +11,16 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
-fetch (ENDPOINT)
-.then (res => res.json())
-.then(cars =>{
-    const allCars= document.querySelector('#output') 
-    console.log(cars)
-    cars.forEach(car =>{
-        console.log(car.brand)
-        const newcarCards = new CarCards(car.brand, car.models)
-        allCars.appendChild(newcarCards)
+fetch(ENDPOINT)
+    .then(res => res.json())
+    .then(cars => {
+        const allCars = document.querySelector('#output')
+        console.log(cars)
+        cars.forEach(car => {
+            console.log(car.brand)
+            const newcarCards = new CarCards(car.brand, car.models)
+            allCars.appendChild(newcarCards)
+        })
     })
-})
 
 
