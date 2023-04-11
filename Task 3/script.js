@@ -15,9 +15,10 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 
 const ENDPOINT = 'https://api.github.com/users';
 const button= document.querySelector('#btn');
+const message= document.querySelector('#message');
 
 button.addEventListener('click', () => {
-    
+    message.style.display='none'
 fetch (ENDPOINT)
 .then (res => res.json())
 .then(users =>{
@@ -25,7 +26,7 @@ fetch (ENDPOINT)
     users.forEach(user =>{
         console.log(user.login, user.avatar_url)
         const newUserCard = new UserCards(user)
-        allUsers.appendChild(newUserCard.render())
+        allUsers.appendChild(newUserCard)
     })
 })
 });

@@ -16,7 +16,25 @@
   align-items: center;
   background-color: #222;
 }
+.box{
+  width: 300px;
+  height: 300px;
+  border: black 1px solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
+
+}
+.img{
+  width: 200px;
+}
+
+.textColor{
+  color: black !important
+
+ 
+}
 .btn-container {
   width: 100%;
   display: flex;
