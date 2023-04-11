@@ -27,3 +27,11 @@
   margin-top: 50px;
   color: #333;
 }
+.carBox{
+  border: black 1px solid;
+  border-radius: 15px;
+  text-align: center;
+  margin: 5px;
+  height: 170px;
+  
+}

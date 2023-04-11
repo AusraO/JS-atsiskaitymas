@@ -1,3 +1,4 @@
+import CarCards from "./carsCards.js";
 /* ------------------------------ TASK 4 -----------------------------------
 Parašykite JS kodą, vartotojui atėjus į tinklapį kreipsis į cars.json failą
 ir iš jo atvaizduos visus automobilių gamintojus ir pagamintus modelius. 
@@ -10,3 +11,16 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+fetch (ENDPOINT)
+.then (res => res.json())
+.then(cars =>{
+    const allCars= document.querySelector('#output') 
+    console.log(cars)
+    cars.forEach(car =>{
+        console.log(car.brand)
+        const newcarCards = new CarCards(car.brand, car.models)
+        allCars.appendChild(newcarCards)
+    })
+})
+
+
