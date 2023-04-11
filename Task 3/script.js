@@ -1,4 +1,4 @@
-
+import UserCards from './card.js';
 /* ------------------------------ TASK 3 -----------------------------------
 Parašykite JS kodą, kuris leis vartotojui paspaudus ant mygtuko "Show users"
 pamatyti vartotojus iš Github API (endpoint'as pateiktas žemiau).
@@ -11,7 +11,7 @@ Paspaudus mygtuką "Show users":
 Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
-import UserCards from './card.js';
+
 
 const ENDPOINT = 'https://api.github.com/users';
 const button= document.querySelector('#btn');
