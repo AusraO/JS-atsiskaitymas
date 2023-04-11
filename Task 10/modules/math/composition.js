@@ -1,3 +1,14 @@
-function composition(a, b) {
-  return a + b;
+export default class Composition {
+  constructor(a, b) {
+    this.a = a;
+    this.b=b
+    return this.render();
+  }
+
+  render() {
+    this.composition = this.a+this.b
+    }
+  getResult(){
+    return this.composition
+  }
 }
